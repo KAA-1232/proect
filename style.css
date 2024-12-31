@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+.navbar img {
+    height: 25px; /* Высота иконки сайта */
+    margin-right: 1px;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+}
+button {
+    background-color: #4CAF50; /* Цвет фона */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+    padding: 10px; /* Отступы */
+    transition: background-color 0.3s; /* Плавный переход */
+    display: flex; /* Для выравнивания изображения */
+    align-items: center; /* Выравниваем по центру */
+}
+button img {
+    width: 24px; /* Ширина изображения */
+    height: 24px; /* Высота изображения */
+    margin-right: 8px; /* Отступ между изображением и текстом */
+}
+button:hover {
+    background-color: #45a049; /* Цвет кнопки при наведении */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Сдвигаем в правую часть родительского блока */
+    transform: translateX(45%); /* Сдвигаем влево на полную ширину блока */
+}
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #fffefe;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Адаптируем к ширине мобильного экрана */
+    margin:  auto ;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%)
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 10px; /* Добавляем отступ для текста */
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Уменьшаем отступы для мобильной версии */
+    font-size: 18px; /* Уменьшаем размер шрифта */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:active {
+    background-color: darkgreen;
+}
+
+
+.decorative-line {
+    position: relative;
+    text-align: center; /* Центрируем текст */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.decorative-line::before,
+.decorative-line::after {
+    content: '';
+    position: absolute;
+    width: 100px; /* Длина линии */
+    height: 2px; /* Толщина линии */
+    background: black; /* Цвет линии */
+}
+
+.decorative-line::before {
+    top: -10px; /* Положение линии сверху */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем линию */
+}
+
+.decorative-line::after {
+    bottom: -10px; /* Положение линии снизу */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем линию */
+}
+
+
+.container2 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.ocenka {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-buy {
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.price-buy h3 {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+
+.price-buy button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.price-buy button:hover {
+    background-color: #27ae60;
+}
+
+.price-buy img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
